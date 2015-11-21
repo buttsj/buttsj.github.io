@@ -146,7 +146,7 @@ header .intro-text .skills {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
-	
+
 	.nav.navbar-nav.navbar-right li a {
 		color: white;
 	}
@@ -219,7 +219,7 @@ section.success a.active {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
