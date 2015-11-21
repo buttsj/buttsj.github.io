@@ -11,7 +11,7 @@
 	<link href="css/bootstrap-tagsinput.css" rel="stylesheet">
 	<link href="css/freelancer.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		
+
 	<!-- Bootstrap core JavaScript -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -128,7 +128,7 @@
                         <img src="images/hammer.png" class="img-responsive" alt="">
                     </a>
                 </div>
-				<div class="col-sm-3 portfolio-item">
+								<div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -136,6 +136,16 @@
                             </div>
                         </div>
                         <img src="images/terminal.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+								<div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/discordskype.png" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -203,7 +213,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        
+
                     </div>
                 </div>
             </div>
@@ -365,8 +375,8 @@
                             <p>For my Introduction to Operating Systems course I was asked to design a simple shell using C programming. The shell accepted user commands that were executed in a child process.</p>
                             <br>
                             <p>The first part of this assignment was to implement a history command and a few custom commands, like "Run Most Recent (rr)" and "Run Command # (r num)." The max history can also be set with "sethistory #"</p>
-							<br>
-							<p>The second part of the assignment was to enhance the history feature by making it persistent between sessions. This was done through saving the history with each session to the user's Home directory. I also implemented the ability to change the current directory with the "cd" command.</p>
+														<br>
+														<p>The second part of the assignment was to enhance the history feature by making it persistent between sessions. This was done through saving the history with each session to the user's Home directory. I also implemented the ability to change the current directory with the "cd" command.</p>
                             <ul class="list-inline item-details">
                             	<li>Class:
                                     <strong><a target="_blank" href="http://coe-portal.cse.ohio-state.edu/pdf-exports/CSE/CSE-2431.pdf">CSE 2431</a>
@@ -389,6 +399,49 @@
             </div>
         </div>
     </div>
+		<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+	        <div class="modal-content">
+	            <div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                    <div class="rl">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-lg-8 col-lg-offset-2">
+	                        <div class="modal-body">
+	                            <h2>Skype and Discord Bot</h2>
+	                            <hr class="star-primary">
+	                            <img src="images/skypebot.png" class="img-responsive img-centered" alt="">
+	                            <img src="images/discordbot.png" class="img-responsive img-centered" alt="">
+	                            <p>This side project began by using the Skype API to communicate with my friends in our personal chatrooms. The bot was programmed to respond to various commands starting with "!"</p>
+	                            <br>
+	                            <p>After this I switched to the chat service Discord App. I took most of my old code from the Skype Bot and rewrote it using open source Discord API.</p>
+															<br>
+															<p>The bot ran through command line, so I needed a server to run without interruption. I chose Amazon's Elastic Compute Cloud (EC2) service so I could run the bot on a free Windows Server.</p>
+	                            <ul class="list-inline item-details">
+	                            	<li>Source Code:
+	                                    <strong><a target="_blank" href="https://github.com/buttsj/DiscordBotConsole">Discord Bot</a></strong> and
+																			<strong><a target="_blank" href="https://github.com/buttsj/SkypeBot">Skype Bot</a></strong>
+	                                </li>
+	                                <li>Software used:
+	                                    <strong>Visual Studio, C#, Skype, Discord App</strong>
+	                                </li>
+	                                <li>Date:
+	                                    <strong>Fall 2015</strong>
+	                                </li>
+	                                <li>Skill area(s):
+	                                    <strong>Programming, Design</strong>
+	                                </li>
+	                            </ul>
+	                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	<script type="text/javascript">
 			$(function () {
 				$('[data-toggle="tooltip"]').tooltip()
