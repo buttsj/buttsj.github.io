@@ -166,6 +166,16 @@
                         <img src="images/pokeball.png" class="img-responsive" alt="">
                     </a>
                 </div>
+								<div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/javalogo.png" class="img-responsive" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -506,6 +516,50 @@
 		            </div>
 		        </div>
 		    </div>
+				<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+			        <div class="modal-content">
+			            <div class="close-modal" data-dismiss="modal">
+			                <div class="lr">
+			                    <div class="rl">
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="container">
+			                <div class="row">
+			                    <div class="col-lg-8 col-lg-offset-2">
+			                        <div class="modal-body">
+			                            <h2>Core Interpreter written in Java</h2>
+			                            <hr class="star-primary">
+			                            <img src="images/interInput.PNG" class="img-responsive img-centered" alt="">
+			                            <p>This was an ongoing project in my Principles of Programming Languages course at The Ohio State University. In this course I designed an Interpreter for the <a href="images/BNF for Core.pdf">Core Language</a>.</p>
+			                            <br>
+			                            <p>My interpreter made use of a Tokenizer to build a list of tokens for the language. My Tokenizer used a Singleton pattern to make it accessable and consistent to all objects.</p>
+																	<br>
+																	<p>The interpreter itself was designed using an Object-Oriented implementation, so all of the Backus-Naur Form non-terminal symbols represented an object. The interpreter had three parts:</p>
+																	<br>
+																	<ol>
+																		<li>Parser: create all of the objects needed for the code provided, error check as well.</li>
+																		<li>Printer: pretty-print the code for the user.</li>
+																		<li>Executor: run through the code and perform the operations and provide any output.</li>
+																	</ol>
+			                            <ul class="list-inline item-details">
+			                                <li>Software used:
+			                                    <strong>Eclipse, Java</strong>
+			                                </li>
+			                                <li>Date:
+			                                    <strong>Spring 2016</strong>
+			                                </li>
+			                                <li>Skill area(s):
+			                                    <strong>Programming, Computer Science</strong>
+			                                </li>
+			                            </ul>
+			                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
 	<script type="text/javascript">
 	$(function () {
 	$('[data-toggle="tooltip"]').tooltip()
