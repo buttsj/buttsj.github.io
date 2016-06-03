@@ -28,12 +28,21 @@ a.active {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+
+h4 {
+  font-family: Harlow;
+  font-size: 500%;
+  font-weight: 700;
+  color: #000000;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 hr.star-light,
