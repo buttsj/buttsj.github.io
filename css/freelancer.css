@@ -25,6 +25,17 @@ a.active {
     color: #BABABA;
 }
 
+@font-face {
+    font-family: 'Harlow';
+    src: url('../fonts/harlowsi-webfont.eot');
+    src: url('../fonts/harlowsi-webfont.woff2') format('woff2'),
+         url('../fonts/HarlowSolid.woff') format('woff'),
+         url('../fonts/HarlowSolid.ttf') format('truetype'),
+         url('../fonts/HarlowSolid.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1,
 h2,
 h3,
