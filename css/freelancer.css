@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #BABABA;
+    color: #dddddd;
 }
 
 @font-face {
@@ -83,7 +83,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #BABABA;
+    background-color: #dddddd;
 }
 
 hr.star-primary {
@@ -199,6 +199,7 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
+    background: #dddddd;
 }
 
 section h2 {
@@ -207,8 +208,7 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background: #BABABA;
+    background: #dddddd;
 }
 
 section.success a,
@@ -265,7 +265,7 @@ section.success a.active {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: #dddddd;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
@@ -301,7 +301,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #BABABA;
+    color: #dddddd;
     background: #fff;
 }
 
@@ -354,7 +354,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #BABABA;
+    color: #dddddd;
 }
 
 form .row:first-child .floating-label-form-group {

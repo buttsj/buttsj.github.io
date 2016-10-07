@@ -8,7 +8,7 @@
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/freelancer.css" rel="stylesheet">
-	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="js/jquery.min.js"></script>
@@ -22,27 +22,9 @@
 </head>
 
 <body id="page-top" class="index">
-	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-	<div class="scroll-top page-scroll visible-xs visible-sm">
-		<a class="btn btn-primary" href="#page-top">
-			<i class="fa fa-chevron-up"></i>
-		</a>
-	</div>
-
 	<!-- Navigation -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#page-top">Home</a>
-			</div>
-
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -56,6 +38,9 @@
 						<a href="#about">About</a>
 					</li>
 					<li class="page-scroll">
+						<a href="#strengths">Strengths</a>
+					</li>
+					<li class="page-scroll">
 						<a href="resume.pdf">Resume</a>
 					</li>
 				</ul>
@@ -67,21 +52,21 @@
 
 	<!-- Header -->
 	<div class="parallax-container" data-natural-height="1080" data-natural-wider="1920" data-parallax="scroll" data-image-src="images/map5.jpg">
-	<header id="page-top">
-		<div class="container">
-			<div class="row">
-				<p class="justified">
-					<h4>John (Jack) Butts</h4>
-				</p>
-				<h1>Programmer & Designer</h1>
+		<header id="page-top">
+			<div class="container">
+				<div class="row">
+					<p class="justified">
+						<h4>John (Jack) Butts</h4>
+					</p>
+					<h1>Programmer & Designer</h1>
+				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 	</div>
 
 	<!-- Portfolio Grid Section -->
 	<section id="portfolio">
-		<div class="container">
+		<div class="container-small">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2>Portfolio</h2>
@@ -186,7 +171,7 @@
 
 	<!-- About Section -->
 	<section class="success" id="about">
-		<div class="container">
+		<div class="container-small">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2>About Me</h2>
@@ -194,18 +179,42 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4 col-lg-offset-2">
-					<p>My craft is digital development, and ideas are my specialty. I provide my product through programming and design, ranging from video games to dynamic websites to chat room bots. I hone my craft by continuing to challenge myself in personal and professional projects. I have a balance between enterprise software and individual applications, both of which I am equally passionate about.</p>
+				<p>My craft is digital development, and ideas are my specialty. I provide my product through programming and design, ranging from video games to dynamic websites to chat room bots. I hone my craft by continuing to challenge myself in personal and professional projects. I have a balance between enterprise software and individual applications, both of which I am equally passionate about.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- StrengthsFinder Section -->
+	<section class="success" id="strengths">
+		<div class="container-small">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Strengths</h2>
+					<hr>
 				</div>
-				<div class="col-lg-4">
-					<p>My top five strengths from the Clifton StrengthsFinder assessment are:</p>
-					<ol>
-					<li><b>Maximizer</b></li>
-					<li><b>Analytical</b></li>
-					<li><b>Futuristic</b></li>
-					<li><b>Ideation</b></li>
-					<li><b>Strategic</b></li></ol>
-					<p>My strengths help me as a developer as I strive for excellence, reason through problems, and imagine new and creative ideas.</p>
+			</div>
+			<div class="row">
+				<div class="list-group">
+					<a href="http://www.gallup.com/businessjournal/697/maximizer.aspx" class="list-group-item">
+						<h4 class="list-group-item-heading">Maximizer</h4>
+						<p class="list-group-item-text">Excellence, not average, is your measure.</p>
+					</a>
+					<a href="http://www.gallup.com/businessjournal/631/analytical.aspx" class="list-group-item">
+						<h4 class="list-group-item-heading">Analytical</h4>
+						<p class="list-group-item-text">Prove it. Show me why what you are claiming is true.</p>
+					</a>
+					<a href="http://www.gallup.com/businessjournal/673/futuristic.aspx" class="list-group-item">
+						<h4 class="list-group-item-heading">Futuristic</h4>
+						<p class="list-group-item-text">Wouldn't it be great if . . .</p>
+					</a>
+					<a href="http://www.gallup.com/businessjournal/679/ideation.aspx" class="list-group-item">
+						<h4 class="list-group-item-heading">Ideation</h4>
+						<p class="list-group-item-text">An idea is a concept, the best explanation of the most events.</p>
+					</a>
+					<a href="http://www.gallup.com/businessjournal/718/strategic.aspx" class="list-group-item">
+						<h4 class="list-group-item-heading">Strategic</h4>
+						<p class="list-group-item-text">Sort through the clutter and find the best route.</p>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -252,7 +261,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-
 					</div>
 				</div>
 			</div>
