@@ -38,6 +38,10 @@ hr {
   border-color: #333333;
 }
 
+.navbar.transparent {
+   background: rgba(0,0,0,0.4);
+}
+
 
 /*
 Overriding some default freelancer css
