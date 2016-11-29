@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John Butts&mdash; Lab 03 </title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lab03_shaders_setup.js"></script>
+    <script type="text/javascript" src="lab03.js"></script>
+
+    <!--  ************** Fragment Shader ************* -->
+    <script id="shader-fs" type="x-shader/x-fragment">
+    precision mediump float;
+    varying vec4 vColor;
+    void main(void) {
+      gl_FragColor = vColor;
+    }
+    </script>
+
+    <!--  ************** Vertex Shader ************* -->
+    <script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 aVertexPosition;
+    attribute vec4 aVertexColor;
+    varying vec4 vColor;
+    uniform mat4 uMMatrix;
+    uniform mat4 uVMatrix;
+    uniform mat4 uPMatrix;
+    void main(void) {
+      gl_PointSize = 10.0;
+      gl_Position = uPMatrix* uVMatrix*uMMatrix*vec4(aVertexPosition, 1.0);
+      vColor = aVertexColor;
+    }
+    </script>
+  </head>
+  <body oncontextmenu="return false;" onload="webGLStart();">
+    <div class="text-center">
+      <canvas id="lab03-canvas"style="border:1px solid #000000;"width="800"height="800"></canvas>
+      <br>
+      <button class="btn btn-secondary" onclick="redraw()"> Reset</button>
+      <button id="anibutton" class="btn btn-secondary" onclick="animated()"> Animate</button>
+      <br>
+      <br>
+      <button class="btn btn-secondary" onclick="panCamL()"> Pan Camera (Left)</button>
+      <button class="btn btn-secondary" onclick="panCamR()"> Pan Camera (Right)</button>
+      <br>
+      <br>
+      <button class="btn btn-secondary" onclick="rollCamL()"> Roll Camera (Left)</button>
+      <button class="btn btn-secondary" onclick="rollCamR()"> Roll Camera (Right)</button>
+      <br>
+      <br>
+    <div class="well well-sm">
+      <p>Left mouse button to rotate scene | Right mouse button to scale scene</p>
+      <p>Up/Down/Left/Right to move the Camera's position + focus</p>
+      <p>Shift + (Up/Down/Left/Right) to only move the Camera's focus</p>
+      <p>Ctrl + (Up/Down/Left/Right) to only move Camera's position</p>
+      <p>Camera's focus is indicated by the <strong>black cursor</strong></p>
+      <p>Cylinder=rope | Sphere=joints | Cube=arms</p>
+    </div>
+    </div>
+    <footer>
+      <center>
+        <p>&copy;John Butts@OSU CSE 5542</p>
+      </center>
+    </footer>
+  </body>
+</html>

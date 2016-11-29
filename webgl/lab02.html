@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>John Butts &mdash; Lab 02 </title>
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+
+  <!--  ************** Fragment Shader ************* -->
+  <script id="shader-fs" type="x-shader/x-fragment">
+  precision mediump float;
+  varying vec4 vColor;
+
+  void main(void) {
+    gl_FragColor = vColor;
+  }
+  </script>
+
+  <!--  ************** Vertex Shader ************* -->
+  <script id="shader-vs" type="x-shader/x-vertex">
+
+  attribute vec3 aVertexPosition;
+  attribute vec4 aVertexColor;
+  varying vec4 vColor;
+  uniform mat4 uMVMatrix;
+
+  void main(void) {
+    gl_PointSize = 10.0;
+    gl_Position = uMVMatrix*vec4(aVertexPosition, 1.0);
+    vColor = aVertexColor;
+  }
+  </script>
+
+  <script type="text/javascript" src="lab02_shaders_setup.js"></script>
+  <script type="text/javascript" src="lab02.js"></script>
+</head>
+<body onload="webGLStart();">
+  <div class="text-center">
+    <canvas id="code04-canvas"style="border:1px solid #000000;"width="800"height="800"></canvas>
+    <br>
+    <button id="button1" class="btn btn-secondary" onclick="obj(1)"> Big Circle</button>
+    <button id="button2" class="btn btn-secondary" onclick="obj(2)"> Large Arms</button>
+    <button id="button3" class="btn btn-secondary" onclick="obj(3)"> Small Arms</button>
+    <button class="btn btn-secondary" onclick="redraw()"> Reset</button>
+    <button id="anibutton" class="btn btn-secondary" onclick="animated()"> Animated Scene</button>
+    <br>
+    <p> Up: f key </p>
+    <p> Down: b key </p>
+    <p> Left: l key </p>
+    <p> Right: r key </p>
+    <p> Rotate with mouse, scale with S and s </p>
+  </div>
+  <footer>
+    <center>
+      <p>&copy;John Butts@OSU CSE 5542</p>
+    </center>
+  </footer>
+  <!-- JQuery Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Bootstrap Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Bootstrap Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Bootstrap Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
