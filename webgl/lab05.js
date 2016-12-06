@@ -681,6 +681,16 @@ function onDocumentMouseOut( event ) {
 
 function onKeyDown(event) {
   switch(event.keyCode){
+    case 70:
+    // f key
+    camera.focus[2]--;
+    camera.pos[2]--;
+    break;
+    case 66:
+    // b key
+    camera.focus[2]++;
+    camera.pos[2]++;
+    break;
     case 40:
     // down arrow
     camera.focus[1]--;
