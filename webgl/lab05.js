@@ -912,7 +912,3 @@ function dropTeapot() {
     clearInterval(dropTeapotId);
   }
 }
-
-window.onload = function() {
-  redraw();
-};
