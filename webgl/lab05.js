@@ -1,6 +1,7 @@
 /////////////////////////
 //  JOHN (JACK) BUTTS  //
 //      CSE 5542       //
+//  github.com/buttsj  //
 /////////////////////////
 
 var gl;
@@ -397,6 +398,11 @@ function setMatrixUniforms() {
   gl.uniformMatrix4fv(shaderProgram.mMatrixUniform, false, mMatrix);
   gl.uniformMatrix4fv(shaderProgram.vMatrixUniform, false, vMatrix);
   gl.uniformMatrix4fv(shaderProgram.pMatrixUniform, false, pMatrix);
+  mat4.identity(nMatrix);
+  nMatrix = mat4.multiply(nMatrix, vMatrix);
+  nMatrix = mat4.multiply(nMatrix, mMatrix); // update the nMatrix everytime the mvMatrix changes
+  nMatrix = mat4.inverse(nMatrix);
+  nMatrix = mat4.transpose(nMatrix);
   gl.uniformMatrix4fv(shaderProgram.nMatrixUniform, false, nMatrix);
 }
 
