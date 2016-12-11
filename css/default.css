@@ -64,7 +64,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #dddddd;
+    color: #70c9e1;
 }
 
 @font-face {
