@@ -2,6 +2,31 @@
 Overriding some default bootstrap css
 */
 
+blockquote{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  border-left: 0.5em solid #DDD;
+}
+
+blockquote p {
+	margin: 0;
+}
+
+blockquote:before {
+	display: block;
+	position: absolute;
+	height: 0;
+	content: "\201C";
+	margin-left: -0.7em; 
+	font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+	color: #999;
+}
+
 img.customImg {
 	float: left;
 	border:10px solid white;
